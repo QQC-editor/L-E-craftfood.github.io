@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&E Craft Food</title>
+
+  <style> 
+body{
+    background-color:rgb(145, 18, 28);
+    color: rgb(232, 227, 232);
+    line-height: 1.4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    border-bottom: 0px solid #eaeaea;
+}
+
+  .logo {
+    margin-left: 35px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: system-ui;
+    color: rgb(145, 18, 28);
+}
+
+.nav-links a {
+    margin-right: 105px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(145, 18, 28);
+    font-weight: 400;
+}
+
+  .navbar{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color:rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 10;
+  }
+.nav-links a:hover {
+    color: #e67e22;
+}
+
+.about-section {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop&q=80'); 
+
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.65); 
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.about-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.products-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 3px solid #2c3e50;
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.product-img-box {
+    position: relative;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.product-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.shop-now-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(145, 18, 28);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+.shop-now-btn:hover {
+    background-color: #e67e22;
+}
+
+.product-card h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+  .productname{
+    text-align: center;
+  }
+  .customer{
+  color: black;
+  font-weight: bold;
+}
+
+.feedback-outer-box {
+    max-width: 1000px;
+    margin: 40px auto 60px auto;
+    border: 4px solid #2c3e50;
+    border-radius: 12px;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.feedback-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feedback-item {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fdfdfd;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+}
+
+.feedback-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #2c3e50;
+}
+
+.feedback-list {
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+    padding-left: 20px;
+}
+
+.feedback-list li {
+    margin-bottom: 8px;
+}
+
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #eaeaea;
+    color: #2c3e50;
+    background-color: white;
+}
+</style>
+  </head>
+
+<body>
+  <header class="navbar">
+    <div class="logo"><h1>L&E Craft Food</h1></div>
+
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop Now</a>
+        <a href="#about">About Us</a>
+        <a href="#blog">Blog</a>
+    </nav>
+</header>
+
+<section id="about" class="about-section">
+    <div class="about-overlay">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+               <strong><em>Welcome to L&E Craft Food! We are two women who share a deep love for Asian food and flavors, and we are thrilled to bring authentic, Asian-style craft food right to your table.</em></strong><br>
+
+<br>Lu spent over a decade living in China, where she developed a passion for handmade kimchi and exploring great food. El, originally from China, has always loved creative tofu dishes. After moving to the UK, she found it surprisingly hard to find interesting tofu products, which inspired her goal: to bring exciting, innovative tofu snacks to the market.<br>
+<br>As co-founders, we are both deeply passionate about authentic Asian flavors and can't wait to share them with everyone here!
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <h2 class="section-title">Product</h2>
+    <div class="products-container">
+
+
+        <div class="product-card">
+            <div class="product-img-box">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Kimchi_stuffing.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Kimchi">
+
+                <a href="#shop-kimchi" class="shop-now-btn">Shop Now</a>
+            </div>
+            <h3 class="productname">Artisan Kimchi</h3>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-box">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/%E6%99%AE%E5%AE%81%E8%B1%86%E5%B9%B2.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Tofu">
+
+                <a href="#shop-tofu" class="shop-now-btn">Shop Now</a>
+            </div>
+            <h3 class="productname">Handmade Tofu</h3>
+        </div>
+
+    </div>
+
+    <div class="feedback-grid">
+
+        <div class="feedback-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/%EA%B9%80%EC%B9%98_%EA%B9%80%EC%9E%A5_Making_kimchi_IMG_2919.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Customer 1" class="feedback-img">
+          <p class="customer"><strong>Sarah M.</strong></p>
+            <ul class="feedback-list">
+                <li> "The absolute best craft kimchi I've ever tasted in Manchester!"</li>
+                <li>"Incredible crunch, perfect spice level, and packed with authentic flavor."</li>
+                <li>"Will definitely be re-ordering every single week!"</li>
+            </ul>
+        </div>
+
+        <div class="feedback-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/CSIRO_ScienceImage_3229_Tofu_and_soup.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="z 2" class="feedback-img">
+        <P class="customer"><strong>David L.</strong></P>
+            <ul class="feedback-list">  
+              <li>The texture of the handmade tofu is remarkably smooth and rich.</li>
+                <li>You can genuinely taste the freshness and care put into crafting it.</li>
+                <li>A staple high-protein addition to my daily plant-based meals.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="contact-info">
+         Want to get in touch? For all inquiries: Hello@L&E.com
+    </div>
+  </body>
+</html>
